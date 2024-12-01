@@ -1,0 +1,77 @@
+section {
+    height: 100vh;
+
+
+    .container {
+        .section__top {
+            h2 {
+                font-family: Raleway;
+                font-size: 46px;
+                font-weight: 600;
+                line-height: 57.5px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+
+        }
+
+        .section__bottom {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
+
+
+            .cards {
+                border: 1px solid rgb(229, 231, 226);
+                padding: 10px;
+                .one {
+                    font-size: 24px;
+                    color: gray;
+                    font-family: Raleway;
+
+                    margin-top: 0;
+                    padding-left: 15px;
+                }
+
+                .paragraph {
+                    font-family: Raleway;
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    text-align: left;
+                    padding-left: 15px;
+                }
+
+                img{
+                    width: 320px;
+                    height: 300px;
+                }
+
+
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:678px) {
+    section {
+        height: auto;
+        .container {
+            .section__top{
+                h2{
+                    font-size: 28px;
+                    width: 200px;
+                    margin: 0 auto;
+                }
+            }
+            .section__bottom {
+                display: grid;
+                grid-template-columns:auto;
+                gap: 20px;
+            }
+
+        }
+    }
+}

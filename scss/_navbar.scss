@@ -1,0 +1,135 @@
+nav {
+    padding: 10px;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            li {
+                &:hover {
+                    color: rgba(174, 123, 60, 1);
+                }
+
+            }
+        }
+
+        .nav__phone {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+
+            .icons {
+                display: flex;
+                align-items: center;
+                gap: 0.6rem;
+
+                i {
+                    color: rgba(174, 123, 60, 1);
+                    font-size: 20px;
+                }
+            }
+
+            .nav__number {
+                display: flex;
+                align-items: center;
+                gap: 10px
+            }
+        }
+
+        .hamburger {
+            width: 25px;
+            height: 20px;
+           
+            display: flex;
+            flex-wrap: wrap;
+
+            .ham {
+                width: 22px;
+                height: 3px;
+                background-color: rgba(40, 43, 34, 1);
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:768px) {
+    nav {
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            img {
+                width: 90px;
+                height: 40px;
+            }
+            ul {
+                display: none;
+            }
+            .nav__phone {
+                .icons {
+                    i {
+                        font-size: 18px;
+                    }
+                }
+                .nav__number {
+                    i {
+                        font-size: 16px;
+                    }
+                    span {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1024px){
+    nav{
+        .container{
+            gap: 40px;
+            .hamburger{
+                display: none;
+            }
+            ul{
+                gap: 8px;
+                li{
+                    font-size: 14px;
+                }
+            }
+            .nav__phone {
+                .icons {
+                    i {
+                        font-size: 20px;
+                    }
+                }
+                .nav__number {
+                    i {
+                        font-size: 16px;
+                    }
+                    span {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1536px){
+    nav{
+        .container{
+            .hamburger{
+                display: none;
+            }
+        }
+    }
+}
